@@ -41,7 +41,7 @@ do
 	while (($ITERATION < $SECOND_PARAM + 1))
  	do
 		RESULT=$((ITERATION * ITERATION_2))
-		echo -n "$ITERATION*$ITERATION_2=$RESULT    "
+		printf "$ITERATION*$ITERATION_2=$RESULT\t"
 		ITERATION=$(($ITERATION+1))
  	done
 	echo ""
